@@ -7,6 +7,7 @@ fi
 
 echo "Установка MySql"
 yum install mysql-server -y
+systemctl enable mysqld
 systemctl start mysqld
 
 function ask() {
