@@ -71,3 +71,10 @@ if [ $answer != "n" ]
     rm -r /etc/grafana/
     rm -r /var/lib/grafana/
 fi
+
+echo "Удалить iptables? (Y/n)"
+read answer
+if [ $answer != "n" ]
+    then
+    yum remove -y iptables
+fi
